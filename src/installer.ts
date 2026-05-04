@@ -33,7 +33,7 @@ export async function getMaven(version: string) {
 
 async function downloadMaven(version: string): Promise<string> {
   const toolDirectoryName = `apache-maven-${version}`;
-  const downloadUrl = `https://repo.maven.apache.org/maven2/org/apache/maven/apache-maven/${version}/apache-maven-${version}-bin.tar.gz`;
+  const downloadUrl = `https://jfrog.teliacompany.io/ui/native/common-maven-remote-virtual/org/apache/maven/apache-maven/${version}/apache-maven-${version}-bin.tar.gz`;
   console.log(`downloading ${downloadUrl}`);
 
   try {
